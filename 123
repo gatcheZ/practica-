@@ -39,15 +39,13 @@ def dney_v_month(month:int, god: int) -> (int):
            return 28
     days_in_month = [31,28,31,30,31,30,31,31,30,31,30,31]
     return days_in_month[month - 1]
-    
 
-def dney_polz_dney_v_month() -> (bool):
-    if day <= dney_v_month():
-        print(f"да")
+
+def dney_polz_dney_v_month(day:int, god:int, month: int) -> (bool):
+    dney = dney_v_month(month,god)
+    if day <= dney  :
+        print(f"да есть")
         return True
     else:
         print(f"net")
-        return False    
-    
-    
-    
+  
