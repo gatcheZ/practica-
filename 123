@@ -41,7 +41,7 @@ def neotriz(day: int, god: int, month: int) -> (bool):
 
 def dney_v_month(day: int, god: int, month: int) -> (int):
     if month == 2:
-        if visok_year(god) == False:
+        if visok_year(god) == True:
             return 29
         else:
             return 28
