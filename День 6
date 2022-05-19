@@ -1,8 +1,10 @@
 # задание 1
 my_fav_food = ["цезарь", "пивасик", "кофе"]
+
 # print(f"моя любимая еда это: {my_fav_food[0]}, {my_fav_food[1]}, {my_fav_food[2]}")
 
-minus_food = int(input("Введите номер продукта которы нужно удалить: "))
+minus_food = int(input("Введите номер продукта которы нужно удалить: ")) -1
+
 new_food = str(input("Введите новый продукт: "))
 
 
@@ -19,6 +21,7 @@ def change_food_name(minus_food: int, new_food: str) -> (int, str):
         while i < food_count:
             print(f"я люблю есть {my_fav_food[i]}")
             i += 1
+
 
 
 change_food_name(minus_food, new_food )
