@@ -1,1 +1,23 @@
-111
+# def sep():
+#     print("-"*120)
+
+# задание 1
+user_name = input("Какое блюдо удалить: ")
+# user_number_product = int(input("Какой элемент вывести: "))
+
+evg_products = ["Цезарь", "Краб", "Оливье"]
+ivan_products = ["Шаурма", "Сэндвич", "Шашлык"]
+all_products = evg_products + ivan_products
+print(all_products)
+
+# new_product = all_products[:user_number_product]
+# print(new_product)
+# sep()
+# задание 2
+if user_name in all_products:
+    all_products.remove(user_name)
+    print(f"{user_name} удален из списка")
+    print(all_products)
+else:
+    print(f"{user_name} нет в списке")
+
