@@ -20,4 +20,14 @@ if user_name in all_products:
     print(all_products)
 else:
     print(f"{user_name} нет в списке")
+-----------------------------------------------------------------------------------
+evg_products = ["Цезарь", "Краб", "Оливье"]
+ivan_products = ["Шаурма", "Сэндвич", "Шашлык"]
+all_products = evg_products + ivan_products
+products_count = len(all_products)
+print(f"В моем списке есть {products_count} продуктов")
+
+
+for i in range(products_count):
+    print(f"Я люблю {all_products[i]}")
 
