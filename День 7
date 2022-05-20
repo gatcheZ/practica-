@@ -31,3 +31,20 @@ print(f"В моем списке есть {products_count} продуктов")
 for i in range(products_count):
     print(f"Я люблю {all_products[i]}")
 
+-----------------------------------------------------------------------------------
+numbers = []
+for i in range(5):
+    number = int(input("Введите число: "))
+    numbers.append(number)
+
+
+list_count = len(numbers)
+# print(f"Всего {list_count} чисел")
+minimum = numbers[0]
+maximum = numbers[0]
+for i in range(list_count):
+    if minimum < numbers[i]:
+        maximum = numbers[i]
+    elif maximum > numbers[i]:
+        minimum = numbers[i]
+print(minimum,maximum)
