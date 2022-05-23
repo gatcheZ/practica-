@@ -1,29 +1,29 @@
-# # задача 1
+# # задача 1----------------------------------------------
 multiplication = []
 for i in range(11):
     qwe = i * 2
     multiplication.append(qwe)
 print(multiplication)
-# задача 2
+# задача 2----------------------------------------------------
 multiplication_on_5 = []
 for i in range(11):
     qwe = i * 5
     multiplication_on_5.append(qwe)
 print(multiplication_on_5)
-# задача 3
+# задача 3----------------------------------------------
 
 all = []
 for i in multiplication:
     if i in multiplication_on_5:
         all.append(i)
 print(all)
-# задача 4
+# задача 4--------------------------------------------------------
 m = 0
 summ_of_numbers = 0
 for m in all:
     summ_of_numbers+= m
 print(f"Их сумма равна {summ_of_numbers}")
-#задача 5
+#задача 5---------------------------------------------------------
 fibanachu1 = 1
 fibanachu2 = 0
 all = [0]
