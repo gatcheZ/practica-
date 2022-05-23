@@ -23,3 +23,12 @@ summ_of_numbers = 0
 for m in all:
     summ_of_numbers+= m
 print(f"Их сумма равна {summ_of_numbers}")
+#задача 5
+fibanachu1 = 1
+fibanachu2 = 0
+all = [0]
+n = int(input("Введите число: "))
+for i in range(n-1):
+    fibanachu1,fibanachu2 = fibanachu2, fibanachu1 + fibanachu2
+    all.append(fibanachu2)
+print(all)  
