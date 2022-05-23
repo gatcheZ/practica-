@@ -32,3 +32,18 @@ for i in range(n-1):
     fibanachu1,fibanachu2 = fibanachu2, fibanachu1 + fibanachu2
     all.append(fibanachu2)
 print(all)  
+# задача 6 -------------------------------------------------------------------
+from random import randint
+a = randint(1,10)
+n = int(input("Введите число: "))
+while n!= a:
+    if n < a:
+        print("число меньше того что задумал компьютер")
+        n = int(input("Попробуй еще раз: "))
+    elif n > a:
+        print("число больше чем то что задумал компьютер")
+        n = int(input("Попробуй еще раз: "))
+    else:
+        print("вы угадали!")
+print(a)
+print(n)
