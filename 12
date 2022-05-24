@@ -1,0 +1,59 @@
+# # задача 1  1.1
+
+
+a = float(input("первое число= "))
+b = float(input("второе число= "))
+c = float(input("третье число= "))
+d = float(input("четвертое число= "))
+e = float(input("пятое число= "))
+f  = float(input("шестое число= "))
+
+def roots(a: float, b: float, c: float, d: float) -> (float):
+    res = ((b - a) ** 2 + (d + c) ** 2) ** 0.5
+    return res
+
+def sides(side1: float, side2: float, side3: float) -> (float):
+    poluper = float((side1 + side2 + side3) / 2)
+    plochad = (poluper * (poluper - side1) * (poluper - side2) * (poluper - side3)) ** 0.5
+    return plochad
+
+
+def yes_or_no(side1: float, side2: float, side3: float):
+    if side1 + side2 > side3 and side2 + side3 > side1 and side1 + side3 > side2:
+        print(f"Такой треугольник существует, его площадь равна= {sides(side1, side2, side3)}")
+    else:
+        print("Такого треугольника не существует")
+        return -1
+
+
+print(yes_or_no(side1, side2, side3))
+
+
+
+side1=roots(a,b,c,d)
+side2=roots(c,d,e,f)
+side3=roots(e,f,a,b)
+
+treygonik_1 = []
+roots(treygonik_1)
+
+treygonik_2 = []
+roots(treygonik_2)
+
+treygonik_3 = []
+roots(treygonik_3)
+
+treygonik_4 = []
+roots(treygonik_4)
+
+treygonik_5 = []
+roots(treygonik_5)
+
+all_sides =[treygonik_1,treygonik_2,treygonik_3,treygonik_4,treygonik_5]
+print(all_sides)
+
+
+
+
+
+
