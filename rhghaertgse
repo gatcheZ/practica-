@@ -38,6 +38,13 @@ print(triangles)
 for triangle in triangles:
     area = yes_or_no(triangle[0], triangle[1],triangle[2])
     if area <0:
-        print("треугольник не сщ")
+        print("треугольник не существет")
     else:
         print(area)
+
+
+a**a+b**b == c**c
+
+
+
+
