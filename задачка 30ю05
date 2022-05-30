@@ -1,0 +1,63 @@
+profit = 0
+item_from_user = "Ноутбук"
+# amount_from_user = 2
+
+
+products = {
+    "Ноутбук": {
+        "price": 99000,  # Цена
+        "amount": 5,  # Остаток на складе
+        "kind": "Бытовая техника"  # Категория
+    },
+    "Айфон": {
+        "price": 180000,
+        "amount": 3,
+        "kind": "Предмет роскоши"
+    },
+    "Телевизор": {
+        "price": 45000,
+        "amount": 8,
+        "kind": "Бытовая техника"
+    }
+}
+
+
+def shop(products_dict: dict):
+    for kind, item in products_dict.items():
+        print("-" * 70)
+        print(f"Продукт - {kind!r}")
+        print("-" * 70)
+        for item_name, keys in item.items():
+            print(f" {item_name} - {keys} ")
+
+
+def purchase_product(item_to_buy: str, products_dict: dict):
+    global profit
+    if item_to_buy not in products_dict:
+        return print("Такого продукта нет(")
+    else:
+        # for goods_stock, amount_number in products_dict.items():
+        products[item_to_buy]["amount"] -= 1
+        profit += products[item_to_buy]["price"]
+        shop(products)
+
+
+def purchase_items(item_name:str,amount:int):
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+if __name__ == '__main__':
+    # shop(products)
+    purchase_product(item_from_user, products)
+    print(profit)
