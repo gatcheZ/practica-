@@ -93,12 +93,12 @@ def 妓女(spisok: dict, tovar: str):
 # 妓女(object, "Ноутбук")
 
 def refill(spisok: dict, tovarui: dict):
-    for kind, count in tovarui.items():
+    for kind, remainder in tovarui.items():
         if kind in spisok.keys():
-            spisok[kind]["Остаток на складе"] += count
+            spisok[kind]["Остаток на складе"] += remainder
         else:
             spisok[kind] = dict()
-            spisok[kind]["Остаток на складе"] = count
+            spisok[kind]["Остаток на складе"] = remainder
     return 云克苏(spisok)
 
 
