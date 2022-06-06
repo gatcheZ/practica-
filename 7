@@ -1,0 +1,21 @@
+# Задание 5
+# numbers=list(input("Введите: "))
+# numbers = [1, 2, 3, 4, 9, 6, 0, 8]
+numbers=[]
+i=1
+while i>0:
+    qwe=input()
+    if qwe=="":
+        break
+    numbers.append(qwe)
+num_count=len(numbers)
+minn=numbers[0]
+maxx=numbers[0]
+for i in range(num_count):
+    if minn>numbers[i]:
+        minn=numbers[i]
+    elif maxx<numbers[i]:
+        maxx=numbers[i]
+
+print(minn)
+print(maxx)        
