@@ -1,0 +1,58 @@
+mission = {
+    "задача0": "описание0",
+    "задача1": "описание1",
+    "задача2": "описание2",
+    "задача3": "описание3"
+}
+
+tasks = {
+    "Вывести список задач": 0,
+    "Посмотреть подробности задачи": 1,
+    "Добавить задачу": 2,
+    "Удалить задачу": 3,
+    "Выход": 4,
+}
+
+
+def print_tasks(dictionary: dict):
+    for task in dictionary.keys():
+        print(f"{task}")
+
+
+def print_description(dictionary: dict):
+    number_t = str(input("Пожалуйста введите задачу: "))
+    if number_t in dictionary:
+        print(dictionary[number_t])
+    else:
+        print("Такой задачи нет")
+
+
+while True:
+    for number in tasks.keys():
+        print(f"[{tasks.get(number)}] {number}")
+
+    number_of_task = int(input("Пожалуйста, введите соответствующую цифру: "))
+
+    if number_of_task == 0:
+        print("-" * 42)
+        print_tasks(mission)
+        print("-" * 42)
+
+    elif number_of_task == 1:
+        print_description(mission)
+        print("-" * 42)
+
+    elif number_of_task == 2:
+        name = str(input("Введите название новой задачи: "))
+        dictionary = str(input("Введите описание новой задачи: "))
+        mission[name] = dictionary
+
+    elif number_of_task == 3:
+        appellation = str(input("Введите название задачи: "))
+        if appellation in mission:
+            del mission[appellation]
+        else:
+            print("Такой задачи нет")
+
+    elif number_of_task == 4:
+        break
