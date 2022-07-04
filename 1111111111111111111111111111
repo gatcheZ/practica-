@@ -42,7 +42,7 @@ def delete_task(dictionary:dict):
         del tasks[name]
         print(f"Задача {name} удалена")
     else:
-        print("Задача не найдена")
+        print("Такой задачи нет")
     the_beauty()
 
 def the_beauty():
@@ -50,13 +50,13 @@ def the_beauty():
     
 
 while True:
-    menu = """
+    menu =  """
         [1] Вывести список задач
         [2] Посмотреть подробности задачи
         [3] Добавть задачу
         [4] Удалить задачу
         [5] Выход
-        Пожалуйста, введите соответствующую цифру: """
+        Введите цифру: """
     num = int(input(menu))
     if num == 1:
         all_task(tasks)
