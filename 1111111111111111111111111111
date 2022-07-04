@@ -67,11 +67,9 @@ while True:
     elif num == 4:
         delete_taskk(tasks)
     elif num == 5:
+        print("выход из программы")
         break
     else:
         print("цифра больше 5")
-        
-        
-        
         
         
