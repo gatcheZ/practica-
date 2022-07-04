@@ -1,0 +1,77 @@
+
+tasks = {
+    "помыть машину": "помыть машину в гараже",
+    "покормить покепона": "покормить покемона ягодами"
+}
+
+#задача 1
+
+def all_task(dictionary:dict):
+    the_beauty()
+    print("Ваши задачи: ")
+    for task in dictionary.keys():
+        print(task)
+    the_beauty()
+    
+#задача 2
+
+
+def show_description(dictionary:dict):
+    the_beauty()
+    task_name = input("Введите имя задачи: ")
+    description = dictionary.get(task_name, "Задачи не существует")
+    print(description)
+    the_beauty()
+    
+#задача 3
+
+def addition(dictionary:dict):
+    the_beauty()
+    name = input("Введите имя новой задачи: ")
+    description = input("Введите описание новой задачи: ")
+    tasks[name] = description
+    print("Задача успешно добавлена")
+    the_beauty()
+
+#задача 4
+
+def delete_task(dictionary:dict):
+    the_beauty()
+    name = input("Введите имя задачи, хотите удалить: ")
+    if name in tasks:
+        del tasks[name]
+        print(f"Задача {name} удалена")
+    else:
+        print("Задача не найдена")
+    the_beauty()
+
+def the_beauty():
+    print("-" * 48)
+    
+
+while True:
+    menu = """
+        [1] Вывести список задач
+        [2] Посмотреть подробности задачи
+        [3] Добавть задачу
+        [4] Удалить задачу
+        [5] Выход
+        Пожалуйста, введите соответствующую цифру: """
+    num = int(input(menu))
+    if num == 1:
+        all_task(tasks)
+    elif num == 2:
+        show_description(tasks)
+    elif num == 3:
+        addition(tasks)
+    elif num == 4:
+        delete_taskk(tasks)
+    elif num == 5:
+        break
+    else:
+        print("цифра больше 5")
+        
+        
+        
+        
+        
