@@ -1,25 +1,41 @@
-.text-upper{ text-transform: uppercase;
+.btn-slider{
 
-.site-name{
+width: 50px;
 
-font-size: 80px;
+padding: 5px; background: transparent;
 
-.btn-order{
+} .btn-slider: focus{
 
-background: #fff;
+box-shadow: none; }
 
-color: #3d67b0;
+.delimiter{
 
-padding: 15px 25px; border: solid 2px #fff;
+width: 100%;
 
-border-top: none;
+} .btn.btn-primary{
 
-border-radius: 0 0 20px 20px;
-
-transition: .5s ease-in-out;
+background: #3d67b0 !important; border: #3d67b0 !important;
 
 }
 
-.btn-order:hover{
+.form-control{
 
-background: transparent; color: #fff;
+border-radius: 10px;
+
+padding: 10px 20px;
+
+} .justify-content-evenly{
+
+justify-content: space-evenly;
+
+} .btn-up{
+
+position: fixed;
+
+right: 25px;
+
+bottom: 25px; z-index: 110; padding: 15px;
+
+.btn-up img{ width: 25px;
+
+}
