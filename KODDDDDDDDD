@@ -1,39 +1,25 @@
+.text-upper{ text-transform: uppercase;
 
-<meta charset="UTF-8">
+.site-name{
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0"> <meta http-equiv="X-UA-Compatible" content="ie=edge"> <link rel="stylesheet" href="assets/css/bootstrap.min.css"> <link rel="stylesheet" href="assets/css/style.css"> <title>My Giro</title>
+font-size: 80px;
 
-</head>
+.btn-order{
 
-<body>
+background: #fff;
 
-</body>
+color: #3d67b0;
 
+padding: 15px 25px; border: solid 2px #fff;
 
-<!DOCTYPE html>
+border-top: none;
 
-<html lang="ru">
+border-radius: 0 0 20px 20px;
 
-<head>
+transition: .5s ease-in-out;
 
--norm]
+}
 
-<meta charset="UTF-8">
+.btn-order:hover{
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0"> <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-nts
-
-<link rel="stylesheet" href="assets/css/bootstrap.min.css"> <link rel="stylesheet" href="assets/css/style.css">
-
-</head>
-
-<title>My Giro</title>
-
-ml
-
-<body>
-
-</body>
-
-</html>
+background: transparent; color: #fff;
